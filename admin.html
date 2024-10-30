@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Leave Application Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Leave Application Details</h1>
+    <div id="applicationDetails">
+        <p><strong>Date:</strong> <?php echo htmlspecialchars($_POST['date']); ?></p>
+        <p><strong>Applicant Name:</strong> <?php echo htmlspecialchars($_POST['applicantName']); ?></p>
+        <p><strong>Authority:</strong> <?php echo htmlspecialchars($_POST['authority']); ?></p>
+        <p><strong>Leave Applying For:</strong> <?php echo nl2br(htmlspecialchars($_POST['reason'])); ?></p>
+        <p><strong>Leave Start Date:</strong> <?php echo htmlspecialchars($_POST['startDate']); ?></p>
+        <p><strong>Leave End Date:</strong> <?php echo htmlspecialchars($_POST['endDate']); ?></p>
+    </div>
+</body>
+</html>

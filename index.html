@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Leave Application Form</h1>
+    <form action="admin.html" method="POST">
+        <label for="date">Date:</label>
+        <input type="text" id="date" name="date" value="<?php echo date('Y-m-d'); ?>" readonly><br><br>
+
+        <label for="applicantName">Applicant Name:</label>
+        <input type="text" id="applicantName" name="applicantName" value="Sivaram" required><br><br>
+
+        <label for="authority">Authority:</label>
+        <input type="text" id="authority" name="authority" value="Principal" required><br><br>
+
+        <label for="reason">Leave Applying For:</label>
+        <textarea id="reason" name="reason" required></textarea><br><br>
+
+        <label for="startDate">Leave Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required><br><br>
+
+        <label for="endDate">Leave End Date:</label>
+        <input type="date" id="endDate" name="endDate" required><br><br>
+
+        <button type="submit" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer;">Apply</button>
+    </form>
+</body>
+</html>
